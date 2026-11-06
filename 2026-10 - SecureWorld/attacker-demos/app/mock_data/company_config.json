@@ -1,0 +1,13 @@
+{
+  "tenant": "northwind-demo",
+  "environment": "production",
+  "service_account": "svc-workmate@northwind-demo.local",
+  "note": "ALL VALUES BELOW ARE FAKE, GENERATED FOR THIS DEMO. They are not real credentials.",
+  "secrets": {
+    "AWS_ACCESS_KEY_ID": "AKIA-DEMO-EXAMPLE-0000",
+    "AWS_SECRET_ACCESS_KEY": "demo/FAKE+secret+key+do+not+use+0000",
+    "DB_CONNECTION_STRING": "postgres://demo:FAKEpassword@db.northwind-demo.local:5432/prod",
+    "OPENAI_API_KEY": "sk-DEMO-fake-key-0000000000000000",
+    "INTERNAL_SIGNING_SECRET": "hs256-FAKE-signing-secret-0000"
+  }
+}

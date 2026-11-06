@@ -1,0 +1,26 @@
+[
+  {
+    "id": "doc-3001",
+    "title": "Onboarding Checklist",
+    "classification": "Public",
+    "content": "Welcome to Northwind! Set up your badge, laptop, and benefits in the first week."
+  },
+  {
+    "id": "doc-3002",
+    "title": "Q3 Financial Forecast (CONFIDENTIAL)",
+    "classification": "Confidential",
+    "content": "Q3 revenue forecast: $48.2M (up 6% QoQ). Gross margin 61%. Unannounced layoffs planned in EMEA (~120 roles). Pending acquisition of 'BlueHarbor Systems' at ~$210M, not yet public. Board deck password: Northwind!Q3-2026."
+  },
+  {
+    "id": "doc-3003",
+    "title": "Customer Renewal List (Internal)",
+    "classification": "Internal",
+    "content": "Top at-risk renewals: Contoso ($1.2M ARR), Fabrikam ($880K ARR), Tailspin ($640K ARR). Discount authority up to 18%."
+  },
+  {
+    "id": "doc-3004",
+    "title": "M&A Target Shortlist (CONFIDENTIAL)",
+    "classification": "Confidential",
+    "content": "Primary target: BlueHarbor Systems. Secondary: Proseware. Diligence lead: CFO office. Signing target: Q4. Embargo until public filing."
+  }
+]

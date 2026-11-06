@@ -1,0 +1,23 @@
+[
+  {
+    "id": "mail-2001",
+    "from": "manager@northwind-demo.local",
+    "subject": "Priorities this week",
+    "received": "08:12",
+    "body": "Please focus on the Q3 forecast deck and the customer renewal list. Ping me if blocked."
+  },
+  {
+    "id": "mail-2002",
+    "from": "cfo-office@northwind-demo.local",
+    "subject": "Board prep — keep tight",
+    "received": "07:58",
+    "body": "Reminder: the BlueHarbor item is strictly confidential until the filing. Do not forward outside the deal team."
+  },
+  {
+    "id": "mail-2003",
+    "from": "it-helpdesk@northwind-demo.local",
+    "subject": "Reminder: laptop patching tonight",
+    "received": "07:45",
+    "body": "Automated patches roll out at 22:00. Save your work and leave the machine on."
+  }
+]

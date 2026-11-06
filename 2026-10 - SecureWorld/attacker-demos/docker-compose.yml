@@ -1,0 +1,28 @@
+services:
+  copilot:
+    build: .
+    working_dir: /srv/app
+    command: uvicorn copilot:app --host 0.0.0.0 --port 8080
+    ports:
+      - "8080:8080"
+    environment:
+      # Ollama runs on the HOST (Windows/macOS Docker Desktop).
+      - OLLAMA_HOST=${OLLAMA_HOST:-http://host.docker.internal:11434}
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-llama3.1:8b}
+      # Pick the demo and the posture per run:
+      - SCENARIO=${SCENARIO:-A}        # A = copilot-as-insider, B = agentic chain
+      - DEFENSE=${DEFENSE:-off}        # off = attack succeeds, on = controls block it
+      - SINK_URL=http://sink:9000/collect
+      - SINK_PUBLIC_URL=${SINK_PUBLIC_URL:-http://localhost:9000}
+      - MAX_AGENT_STEPS=${MAX_AGENT_STEPS:-10}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - sink
+
+  sink:
+    build: .
+    working_dir: /srv/sink
+    command: uvicorn sink:app --host 0.0.0.0 --port 9000
+    ports:
+      - "9000:9000"
